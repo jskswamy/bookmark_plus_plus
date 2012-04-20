@@ -1,7 +1,8 @@
 require 'net/http'
 require 'json'
-
-url = "https://readitlaterlist.com/v2/get?username=lkalarani&password=!abcd1234&apikey=c5eADU89d752efaN19p3a0GZ34TYeX4b"
+username = ARGV[0]
+password = ARGV[1]
+url = "https://readitlaterlist.com/v2/get?username=#{username}&password=#{password}&apikey=c5eADU89d752efaN19p3a0GZ34TYeX4b"
 uri = URI.parse(url)
 conn = Net::HTTP.new(uri.host, uri.port)
 conn.use_ssl = true
