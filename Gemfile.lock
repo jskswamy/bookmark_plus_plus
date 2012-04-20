@@ -6,9 +6,11 @@ GEM
       rake
       stream (>= 0.5)
     stream (0.5)
+    www-delicious (0.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rgl
+  www-delicious
