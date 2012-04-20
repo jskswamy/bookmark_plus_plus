@@ -7,7 +7,7 @@ uri = URI.parse(url)
 conn = Net::HTTP.new(uri.host, uri.port)
 conn.use_ssl = true
 response = conn.request_get(uri.request_uri)
-list = JSON.parse(response.body)["list"]
+list = response.is_a?(Net::HTTPOK) ? JSON.parse(response.body)["list"] : {}
 urls = list.collect do |item_id, item|
   item["url"]
 end
