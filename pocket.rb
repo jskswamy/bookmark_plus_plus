@@ -11,8 +11,7 @@ list = response.is_a?(Net::HTTPOK) ? JSON.parse(response.body)["list"] : {}
 url_tag_map = list.collect do |item_id, item|
   map = {}
   map["url"] = item["url"]
-  tags = item["tags"]
-  map["tags"] = tags.nil? ? [] : tags.split(",")
+  map['tags'] = item['tags'].to_s.split(',')
   map
 end
 p url_tag_map
