@@ -1,0 +1,109 @@
+digraph RGL__DirectedAdjacencyGraph {
+    "My links" [
+        fontsize = 8,
+        label = "My links"
+    ]
+
+    technology [
+        fontsize = 8,
+        label = technology
+    ]
+
+    rails [
+        fontsize = 8,
+        label = rails
+    ]
+
+    "rails 3.2" [
+        fontsize = 8,
+        label = "rails 3.2"
+    ]
+
+    "ruby 1.9.3" [
+        fontsize = 8,
+        label = "ruby 1.9.3"
+    ]
+
+    ruby [
+        fontsize = 8,
+        label = ruby
+    ]
+
+    news [
+        fontsize = 8,
+        label = news
+    ]
+
+    bbc [
+        fontsize = 8,
+        label = bbc
+    ]
+
+    sudan [
+        fontsize = 8,
+        label = sudan
+    ]
+
+    "http://guides.rubyonrails.org/3_2_release_notes.html" [
+        fontsize = 8,
+        label = "http://guides.rubyonrails.org/3_2_release_notes.html"
+    ]
+
+    "http://www.rubyinside.com/ruby-1-9-3-preview-1-released-5229.html" [
+        fontsize = 8,
+        label = "http://www.rubyinside.com/ruby-1-9-3-preview-1-released-5229.html"
+    ]
+
+    "http://www.bbc.co.uk/news/world-africa-17787142" [
+        fontsize = 8,
+        label = "http://www.bbc.co.uk/news/world-africa-17787142"
+    ]
+
+    "My links" -> technology [
+        fontsize = 8
+    ]
+
+    "My links" -> news [
+        fontsize = 8
+    ]
+
+    technology -> rails [
+        fontsize = 8
+    ]
+
+    technology -> "rails 3.2" [
+        fontsize = 8
+    ]
+
+    rails -> "rails 3.2" [
+        fontsize = 8
+    ]
+
+    "rails 3.2" -> "ruby 1.9.3" [
+        fontsize = 8
+    ]
+
+    "rails 3.2" -> "http://guides.rubyonrails.org/3_2_release_notes.html" [
+        fontsize = 8
+    ]
+
+    "ruby 1.9.3" -> ruby [
+        fontsize = 8
+    ]
+
+    ruby -> "http://www.rubyinside.com/ruby-1-9-3-preview-1-released-5229.html" [
+        fontsize = 8
+    ]
+
+    news -> bbc [
+        fontsize = 8
+    ]
+
+    bbc -> sudan [
+        fontsize = 8
+    ]
+
+    sudan -> "http://www.bbc.co.uk/news/world-africa-17787142" [
+        fontsize = 8
+    ]
+}
